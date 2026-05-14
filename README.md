@@ -1,59 +1,144 @@
-# MoodColorPalette
+# 🎨 Mood-Based Color Palette Generator
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
+A sophisticated Angular application that generates curated color palettes based on moods and emotions. Perfect for designers, creative professionals, and developers seeking color inspiration with scientific backing.
 
-## Development server
+## ✨ Features
 
-To start a local development server, run:
+### Core Features
+- **Mood Search** - Type any mood to get a color palette
+- **Auto-complete Suggestions** - Quick access to 10 predefined moods
+- **Multiple Export Formats** - Download as JSON or CSS variables
 
-```bash
-ng serve
+### Advanced Features
+- **🎲 Random Palette Generator** - Instant inspiration with one click
+- **🧠 Color Psychology Info** - Scientific explanations of color meanings
+- **🌈 Gradient Preview** - Visual gradient display of the palette
+- **🔄 Mood Mixer** - Combine two moods to create hybrid palettes
+- **♿ WCAG Accessibility Checker** - Contrast ratios and accessibility compliance
+
+## 🎯 Available Moods
+
+Happy • Sad • Calm • Energetic • Romantic • Mysterious • Peaceful • Creative • Melancholic • Playful
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js v24.15.0+
+- npm 11.12.1+
+- Angular CLI 21.2.11
+
+### Installation & Running
+
+```powershell
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+# App opens at http://localhost:4200/
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📖 How to Use
 
-## Code scaffolding
+1. **Type a mood** (e.g., "happy", "calm", "creative")
+2. **View the palette** - See colors with names and hex codes
+3. **Explore features**:
+   - 🎲 Click Random for instant palettes
+   - 🔄 Mix two moods together
+   - ♿ Check WCAG accessibility
+4. **Download** - Export as JSON or CSS
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🏗️ Project Structure
 
-```bash
-ng generate component component-name
+```
+src/app/
+├── app.ts                      # Component logic
+├── app.html                    # Template UI
+├── app.css                     # Styling
+├── color-palette.service.ts    # Color data & utilities
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🎨 Technologies
 
-```bash
-ng generate --help
+- **Framework**: Angular 17+ (Standalone Components)
+- **Language**: TypeScript
+- **Styling**: CSS3 Variables, Dark Theme
+- **Features**: Responsive, Animations, Accessibility
+
+## 💾 Export Options
+
+### JSON
+```json
+{
+  "mood": "Happy",
+  "colors": ["Sunny Yellow", "Warm Orange"],
+  "hexCodes": ["#FFD700", "#FF8C00"]
+}
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+### CSS Variables
+```css
+:root {
+  --color-1: #FFD700;
+  --color-1-name: "Sunny Yellow";
+}
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## ♿ Accessibility
 
-## Running unit tests
+- WCAG AA/AAA contrast ratios
+- Luminance calculation
+- Dark theme for reduced eye strain
+- ARIA labels & semantic HTML
+- Screen reader friendly
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 🧠 Color Psychology
 
-```bash
-ng test
+Each mood includes scientific explanations of color psychology:
+- Warm colors evoke energy and warmth
+- Cool colors promote calmness
+- Saturation affects vibrancy
+- Luminance impacts readability
+
+## 📦 Available Commands
+
+```powershell
+# Development
+npm start              # Start dev server
+
+# Building
+npm run build          # Production build
+
+# Testing
+npm test              # Run tests
+
+# Additional
+ng serve --open       # Open in browser automatically
+ng build --prod       # Optimized production build
 ```
 
-## Running end-to-end tests
+## 🎯 Perfect For
 
-For end-to-end (e2e) testing, run:
+- Graphic Designers - Color inspiration
+- Web Developers - Design system colors
+- Brand Teams - Mood-based branding
+- Creatives - Portfolio projects
+- Students - Color theory learning
 
-```bash
-ng e2e
-```
+## 📄 License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+MIT License - Open source and free to use
 
-## Additional Resources
+## 👨‍💻 About
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Created as a portfolio project demonstrating:
+- Angular development expertise
+- Color science & psychology
+- UX/UI design principles
+- Web accessibility standards
+- Modern web development practices
+
+---
+
+**Made with ❤️ for designers and creatives** 🎨
